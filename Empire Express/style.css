@@ -1,0 +1,627 @@
+body {
+  background-color: #f4f5e4;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#page_two {
+  display: flex;
+  justify-content: space-between; /* Distribute space between items */
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f5e4;
+  padding: 20px;
+}
+
+#page_two .left-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 45%; /* Adjust width for the left section */
+}
+
+#page_two .right-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55%; /* Adjust width for the right section */
+}
+
+
+
+#page_two .title {
+  margin-top: 20px;
+  font-size: 36px;
+  color: #333;
+  text-align: center;
+}
+
+#page_two .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  background-color: #fff;
+  padding: 20px;
+  border: 3px solid #d8c796;
+  border-radius: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+#page_two .box:hover {
+  transform: scale(1.03); /* Enlarges on hover */
+}
+
+#page_two .box p {
+  font-size: 30px;
+  font-weight: bold;
+  color: #555;
+  text-align: center;
+  margin: 10px 0;
+}
+
+#page_two #givenName {
+  font-weight: bold;
+  color: black;
+  font-size: 60px;
+  text-align: center;
+}
+
+#page_two #countdown {
+  font-size: 60px;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Styling for the game map (right side) */
+#page_two .game-map {
+  /* Add any specific styles for the game map here */
+}
+
+/* Button Styling */
+#page_two .button-4 {
+  padding: 15px 25px;
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(88, 87, 87);
+  background-color: #f0f4db;
+  border: 3px solid #c4dbb2;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#page_two .button-4:hover {
+  background-color: #e2e8b4;
+}
+
+#page_three {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #f4f5e4;
+  padding: 20px;
+}
+
+#page_three h1 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#rulestext {
+  font-size: 18px;
+  font-weight: lighter;
+  color: #555;
+  max-width: 800px;
+  text-align: center;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #fff;
+  border: 3px solid #d8c796;
+  border-radius: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+#rulestext:hover{
+    transform: scale(1.03);
+    z-index: 0; /* Ensure it doesn't overlap the button */
+}
+
+#backbtn{
+  position: relative;
+  z-index: 10;
+  transition: transform 0.3s ease;
+}
+
+#backbtn:hover{
+  transform: scale(1.03);
+}
+#clearLeaderboardBtn{
+  background-color: #adca96;
+  color: white;
+  border: 0px;
+  transition: transform 0.3s ease;
+  transform: scale(0.6);
+  padding: 5px;
+  width: 50%;
+  font-weight: bold;
+}
+
+#clearLeaderboardBtn:hover{
+  background-color: #d8c796;
+  transform: scale(0.7);
+}
+
+#secondbackbtn{
+  background-color: #adca96;
+  color: white;
+  border: 0px;
+  transition: transform 0.3s ease;
+  transform: scale(0.6);
+  padding: 5px;
+  width: 50%;
+}
+
+#secondbackbtn:hover{
+  background-color: #d8c796;
+  transform: scale(0.7);
+}
+
+#titleimg {
+  display: block;
+  margin-left: 20px;
+  width: 80%;
+  max-width: 600px;
+  height: auto;
+  border: 3px solid #c4dbb2;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+#titleimg2 {
+  display: block;
+  margin-left: 20px;
+  width: 80%;
+  max-width: 600px;
+  height: auto;
+  border: 3px solid #d8c796;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+#titleimg2:hover{
+  transform: scale(1.1);
+}
+
+#logo{
+  display: block;
+  margin-left: 20px;
+  width: 80%;
+  max-width: 600px;
+  height: auto;
+}
+
+#titleimg:hover {
+  transform: scale(1.05); /* Enlarges on hover */
+}
+
+.flex-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 200px;
+  margin-top: 200px;
+}
+
+/* Input Field Styling */
+.input-container {
+  width: 80%;
+}
+
+.question {
+  width: 100%;
+  padding: 15px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #7d7d7d;
+  text-align: left;
+  border: 3px solid #d8c796;
+  border-radius: 20px;
+  background-color: #fffdf5;
+  outline: none;
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+.question:hover{
+  transform: scale(1.05); /* Enlarges on hover */
+}
+
+.difficulty-container {
+  width: 80%;
+  border: 3px solid #c4dbb2;
+  background-color: #fffdf5;
+  padding: 20px;
+  border-radius: 40px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.difficulty-container:hover{
+  transform: scale(1.05); /* Enlarges on hover */
+}
+
+.difficulty-text {
+  font-size: 35px;
+  font-weight: bold;
+  color: #c4dbb2;
+  margin-bottom: 10px;
+}
+
+.difficulty-only-container {
+  justify-content: space-around;
+  margin-bottom: 15px;
+}
+
+#button_five{
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+#button_five:hover{
+  transform: scale(1.05); /* Enlarges on hover */
+}
+
+#button_seven{
+  transition: transform 0.3s ease;
+}
+
+#button_seven:hover{
+  transform: scale(1.05); /* Enlarges on hover */
+}
+
+.button-4 {
+  padding: 15px 25px;
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(88, 87, 87);
+  background-color: #f0f4db;
+  border: 3px solid #c4dbb2;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+.button-4:hover {
+  background-color: #e2e8b4;
+}
+
+.rules-button {
+  background-color: #e7e7c7;
+  transition: transform 0.3s ease;
+}
+
+.rules-button:hover{
+  transform: scale(1.05); /* Enlarges on hover */
+}
+
+.start-button .button-4 {
+  background-color: #e4cb82;
+  border: 1px solid #e4cb82;
+  color: #fff;
+  width: 70%;
+  height: 120px;
+  transition: transform 0.3s ease;
+}
+
+.start-button:hover .button-4{
+  border: 1px solid #c4dbb2;
+  background-color: #c4dbb2;
+  transform: scale(1.05); /* Enlarges on hover */
+}
+
+/* Button Container */
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.flex-container-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50vw;
+  height: 100vh;
+  padding: 20px;
+}
+
+.flex-container > div{
+    padding: 20px;
+    text-align: center;
+    font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";  
+}
+
+.difficulty-text{
+    margin-right: 20px;
+}
+
+.difficulty-container{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-around; 
+    align-items: center;
+     
+}
+
+.difficulty-only-container{
+    flex-direction: row;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    width: 300px;
+    flex-direction: column;
+}
+
+
+/* GAME */
+#win{
+  display: none;
+  font-weight: bold;
+  color: black;
+  font-size: 60px;
+  text-align: center; 
+  margin-right: 80px;
+  margin: 0;
+}
+
+#leaderboard {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  border: 3px solid #e4cb82;
+  border-radius: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transform: scale(1.3);
+}
+
+#leaderboard h2 {
+  font-size: 1.8em;
+  color: #333;
+  margin-bottom: 20px;
+}
+/* Style the table */
+#leaderboardTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#leaderboardTable thead th {
+  background-color: #adca96;
+  color: white;
+  padding: 10px;
+  font-size: 1.1em;
+}
+
+#leaderboardTable tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#leaderboardTable tbody tr:hover {
+  background-color: #ddd;
+}
+
+#leaderboardTable th, #leaderboardTable td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+
+#leaderboardTable th {
+  font-weight: bold;
+}
+
+#leaderboardTable td {
+  font-size: 1em;
+  color: #333;
+}
+
+#leadbtn{
+  font-weight: bold;
+  display: none;
+  background-color: #e4cb82;
+  border: solid;
+  border-radius: 6px;
+  color: #fff;
+  width: 100%;
+  transition: transform 0.3s ease;
+  transform: scale(1.5);
+}
+
+.check-lead-container{
+  display: flex;
+  gap: 60px;
+}
+
+.clear-container{
+  display: flex;
+  gap: 20px
+}
+
+#leadbtn:hover{
+  background-color: #c4dbb2;
+  transform: scale(1.6);
+}
+
+#checkbtn{
+  font-weight: bold;
+  display: none;
+  background-color: #e4cb82;
+  border: solid;
+  border-radius: 6px;
+  color: #fff;
+  width: 100%;
+  transition: transform 0.3s ease;
+  transform: scale(1.5);
+}
+
+#checkbtn:hover{
+  background-color: #c4dbb2;
+  transform: scale(1.6); /* Enlarges on hover */
+}
+
+#timeTaken{
+  margin: 0;
+  font-weight: lighter;
+  font-variant:small-caps;
+  color: black;
+  font-size: 40px;
+  text-align: center; 
+}
+
+
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(5, 140px); /* Adjust grid size as needed */
+  grid-template-rows: repeat(5, 140px);
+  gap: px;
+  width: 300px;
+  margin-top: 30px;
+  /*height: 300px;*/
+}
+
+.game-board_seven{
+  display: grid;
+  grid-template-columns: repeat(7, 100px); /* Adjust grid size as needed */
+  grid-template-rows: repeat(7, 100px);
+  gap: px;
+  width: 300px;
+  margin-top: 30px;
+}
+
+.grid-cell {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ddd;
+  background-color: #f0e68c; /* Background color for the tile */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+
+.grid-cell img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures images fit without distortion */
+}
+
+.right-container{
+  display: flex; 
+}
+
+/* ROTATIONS IMPORTANT */
+.img-cell-rotate90 {
+  transform: rotate(90deg);
+}
+
+.img-cell-rotate180 {
+  transform: rotate(180deg);
+}
+
+.img-cell-rotate270 {
+  transform: rotate(270deg);
+}
+
+.img-cell {
+  transition: transform 0.2s ease; /* Smooth rotation */
+}
+
+
+
+
+/* boards ---------------------------------------------------------------------*/
+
+#page_one{
+  display: grid;
+}
+
+#board-one{
+  display: none;
+}
+
+#board-five-two{
+  display: none;
+}
+#board-five-three{
+  display: none;
+}
+#board-five-four{
+  display: none;
+}
+#board-five-five{
+  display: none;
+}
+
+#board-five-one{
+  display: none;
+}
+
+#board-seven-one{
+  display: none;
+}
+#board-seven-two{
+  display: none;
+}
+#board-seven-three{
+  display: none;
+}
+#board-seven-four{
+  display: none;
+}
+#board-seven-five{
+  display: none;
+}
+
+#page_three{
+  display: none;
+}
+
+#page_two{
+  display: none;
+}
+
+#leaderboard{
+  display: none;
+}
+
+
+
